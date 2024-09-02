@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>coiff'EUR</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+
+<!-- Barre noire fixe -->
+<div class="navbar">
+    <h2 class="navbarTitle">coiff'EUR</h2>
+    <button id="loginButton" onclick="openLoginPage()">
+        <img src="img/login.png" alt="login img">
+    </button>
+</div>
+<div class="search-bar" id="searchBar">
+    <label for="searchInput"></label><input type="text" id="searchInput" placeholder="Rechercher un coiffeur...">
+    <button id="fixedButton" >X</button>
+</div>
+
+<!-- Contenu de la page -->
+<div class="container" id="mainContent">
+    <!-- Première colonne pour le contenu existant -->
+    <div class="column first-column" id="contentWrapper">
+        <ul id="coiffeursList">
+            <!-- Les détails des coiffeurs seront affichés ici -->
+        </ul>
+    </div>
+
+    <div class="column second-column" id="otherContent">
+        <!-- Contenu pour la deuxième colonne -->
+    </div>
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
